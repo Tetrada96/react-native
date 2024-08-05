@@ -1,21 +1,14 @@
-import { useAtom } from 'jotai';
+import { useSetAtom } from 'jotai';
 import { Text, View } from 'react-native';
-import { profileAtom } from '../../entities/user/model/user.state';
-import axios from 'axios';
+import { logoutAtom } from '../../entities/auth/model/auth.state';
+import { Button } from '../../shared/Button/Button';
 
 export default function MyCourses() {
-	const [profile] = useAtom(profileAtom);
-
-	const login = async () => {
-		const { data } = axios.post('', {
-			email: '',
-			password: '',
-		});
-	}
-
+	const logout = useSetAtom(logoutAtom);
 	return (
 		<View>
-			<Text>{profile.profile?.name}</Text>
+			<Text>index</Text>
+			<Button text="Выход" onPress={logout}></Button>
 		</View>
 	);
 }
