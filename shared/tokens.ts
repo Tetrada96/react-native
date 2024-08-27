@@ -18,7 +18,14 @@ export const Gaps = {
 };
 
 export const Fonst = {
+	f14: 14,
 	f16: 16,
 	f18: 18,
 	f20: 20,
+	regular: 'FiraSans-Regular',
+	semibold: 'FiraSans-SemiBold',
+};
+
+export const Radius = {
+	r10: 10,
 };
