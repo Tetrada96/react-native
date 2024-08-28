@@ -28,9 +28,10 @@ export const loginAtom = atom(
 				email,
 				password,
 			});
+			console.log(data);
 			set(authAtom, {
 				isLoading: false,
-				accessToken: data.access_token,
+				accessToken: data.accessToken,
 				error: null,
 			});
 		} catch (e) {

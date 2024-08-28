@@ -20,8 +20,6 @@ export default function App() {
 
 	const orientation = useScreenOrientation();
 
-	console.log(orientation);
-
 	const submit = () => {
 		if (!email) {
 			setLocalError('Не введен email');

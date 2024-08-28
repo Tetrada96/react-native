@@ -1,5 +1,5 @@
 export interface AuthResponse {
-	access_token: string;
+	accessToken: string;
 }
 
 export interface LoginRequest {

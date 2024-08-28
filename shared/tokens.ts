@@ -8,10 +8,14 @@ export const Colors = {
 	white: '#fafafa',
 	red: '#CC384E',
 	blackLight: '#1E1F29',
+	border: '#4D5064',
+	secondary: '#E47AD5',
+	grayLight: '#DAD9DE',
 };
 
 export const Gaps = {
 	g8: 8,
+	g10: 10,
 	g16: 16,
 	g20: 20,
 	g50: 50,
@@ -28,4 +32,5 @@ export const Fonst = {
 
 export const Radius = {
 	r10: 10,
+	r17: 17,
 };
