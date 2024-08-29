@@ -1,9 +1,15 @@
 {
   "expo": {
-    "name": "native-app",
-    "slug": "native-app",
+    "name": "PurpleSchool Demo App",
+    "slug": "react-native-app",
+    "description": "Приложение школы PurpleSchool",
     "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "icon": "./assets/icon.png",
+    "orientation": "portrait",
     "userInterfaceStyle": "light",
     "backgroundColor": "#1e1f29",
     "splash": {
@@ -21,14 +27,41 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "ru.purpleschool.appdemo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notificationIcon.png",
+          "color": "#16171D",
+          "defaultChannel": "default"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Необходимо разрешение для выбора фото профиля"
+        }
+      ]
     ],
-    "scheme": "react_native"
+    "scheme": "react_native",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "b20144c8-7918-4259-b6e0-eaf7a3eeb425"
+      }
+    },
+    "owner": "isv"
   }
 }
